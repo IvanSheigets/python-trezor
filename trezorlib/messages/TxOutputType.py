@@ -17,6 +17,8 @@ class TxOutputType(p.MessageType):
         5: ('multisig', MultisigRedeemScriptType, 0),
         6: ('op_return_data', p.BytesType, 0),
         7: ('decred_script_version', p.UVarintType, 0),
+        8: ('block_hash', p.BytesType, 0),
+        9: ('block_height', p.BytesType, 0),
     }
 
     def __init__(

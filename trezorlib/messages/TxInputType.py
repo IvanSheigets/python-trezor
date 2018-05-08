@@ -20,6 +20,7 @@ class TxInputType(p.MessageType):
         8: ('amount', p.UVarintType, 0),
         9: ('decred_tree', p.UVarintType, 0),
         10: ('decred_script_version', p.UVarintType, 0),
+        11: ('prev_input_script', p.BytesType, 0),
     }
 
     def __init__(
